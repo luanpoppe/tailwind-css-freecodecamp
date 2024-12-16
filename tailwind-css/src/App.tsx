@@ -2,14 +2,17 @@ import "./App.css";
 
 function App() {
   return (
-    <div className="container">
-      <div>Header</div>
-      <div className="flex">
-        <div className="flex flex-col">
-          <div>Sidebar</div>
-          <div>Menu</div>
-        </div>
-        <div>Main content</div>
+    <div className="dark">
+      <div className="dark:bg-slate-700">
+        <h1>Title</h1>
+        <h2>Subtitle</h2>
+        <p className="text-base">Text</p>
+        <a href="">Anchor</a>
+
+        <button className="btn btn-primary block">Botão</button>
+        <button disabled className="btn btn-primary block">
+          Botão desabilitado
+        </button>
       </div>
     </div>
   );
